@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fadli &bull; Portfolio 11 RPL B SMK N Tembarak</title>
+    <meta name="description" content="Website portfolio resmi Muhammad Fadli, Siswa kelas 11 RPL B SMK Negeri Tembarak. Calon Web Developer dengan minat di bidang pemrograman dan teknologi.">
+    <meta name="keywords" content="Muhammad Fadli, Portfolio, SMK N Tembarak, 11 RPL B, Rekayasa Perangkat Lunak, Web Developer, Programmer">
+    <meta name="author" content="Muhammad Fadli">
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Ambient Glow & Cyber Grid -->
+    <div class="cyber-bg-glow glow-cyan"></div>
+    <div class="cyber-bg-glow glow-purple"></div>
+    <div class="cyber-grid-overlay"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo: MF. -->
+            <a href="#home" class="nav-logo" aria-label="Beranda Muhammad Fadli">
+                <span class="logo-terminal-symbol">&lt;</span>
+                <span class="logo-letters">MF<span class="logo-dot">.</span></span>
+                <span class="logo-terminal-symbol">/&gt;</span>
+            </a>
+
+            <!-- Navigasi Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <!-- Aksi: Switch Theme & Hamburger -->
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Ganti Tema Dark / Light Mode" title="Ganti Mode Tampilan">
+                    <span class="theme-icon theme-moon" id="themeIconDark">🌙</span>
+                    <span class="theme-icon theme-sun" id="themeIconLight">☀️</span>
+                    <span class="theme-mode-label" id="themeText">Dark Mode</span>
+                </button>
+
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <!-- Status Badge -->
+                    <div class="hero-badge animate-fade-in">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">11 RPL B &bull; SMK N Tembarak</span>
+                    </div>
+
+                    <!-- Salam & Judul -->
+                    <p class="hero-greeting animate-fade-in">Halo, saya</p>
+                    <h1 class="hero-title animate-fade-in">
+                        <span class="title-gradient-glow">Muhammad Fadli</span>
+                    </h1>
+
+                    <!-- Typing Subtitle -->
+                    <div class="hero-role-wrapper animate-fade-in">
+                        <span class="role-static">Pelajar RPL &amp; </span>
+                        <span class="role-dynamic" id="typingText">Calon Developer</span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <!-- Deskripsi Diri -->
+                    <p class="hero-description animate-fade-in">
+                        Saya adalah siswa kelas 11 RPL B yang sedang belajar pemrograman, teknologi, dan pengembangan website. Bersemangat mengeksplorasi sintaks baru, memecahkan masalah logika, dan menciptakan pengalaman digital yang bermanfaat.
+                    </p>
+
+                    <!-- Tombol Aksi Hero -->
+                    <div class="hero-buttons animate-fade-in">
+                        <a href="#about" class="btn btn-primary">
+                            <span>Tentang Saya</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Hubungi Saya</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Micro Highlights -->
+                    <div class="hero-quick-tags animate-fade-in">
+                        <div class="quick-tag">
+                            <span class="quick-tag-dot dot-cyan"></span>
+                            <span>Frontend Enthusiast</span>
+                        </div>
+                        <div class="quick-tag">
+                            <span class="quick-tag-dot dot-purple"></span>
+                            <span>Problem Solver</span>
+                        </div>
+                        <div class="quick-tag">
+                            <span class="quick-tag-dot dot-emerald"></span>
+                            <span>Temanggung, Jawa Tengah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= PROFILE IDENTITY (TANPA FOTO MANUSIA) ================= -->
+                <!-- Menampilkan identitas visual tulisan besar MUHAMMAD FADLI dengan efek neon, gradient, dan animasi futuristik -->
+                <div class="hero-profile-visual animate-fade-in">
+                    <div class="cyber-identity-card" id="identityCard">
+                        <!-- Orbit Rings -->
+                        <div class="orbit-ring ring-outer"></div>
+                        <div class="orbit-ring ring-mid"></div>
+                        <div class="orbit-ring ring-inner"></div>
+
+                        <!-- Badge Tech Corner Top -->
+                        <div class="identity-corner-badge top-left">
+                            <span class="corner-chip">&lt;DEV&gt;</span>
+                        </div>
+                        <div class="identity-corner-badge top-right">
+                            <span class="live-signal-badge">
+                                <span class="live-ping"></span>
+                                ACTIVE
+                            </span>
+                        </div>
+
+                        <!-- Core Profile Identity Typography -->
+                        <div class="identity-core-display">
+                            <div class="identity-pre-tag">// IDENTITY_CARD</div>
+                            <div class="identity-name-huge">
+                                <span class="name-line line-first">MUHAMMAD</span>
+                                <span class="name-line line-second">FADLI</span>
+                            </div>
+                            <div class="identity-sub-tag">
+                                <span class="cyber-separator">&lt;</span>
+                                <span class="tag-bold">11 RPL B</span>
+                                <span class="tag-divider">&bull;</span>
+                                <span>SMK N TEMBARAK</span>
+                                <span class="cyber-separator">&gt;</span>
+                            </div>
+                        </div>
+
+                        <!-- Tech Indicators Bottom -->
+                        <div class="identity-tech-footer">
+                            <span class="code-pill">#HTML5</span>
+                            <span class="code-pill">#CSS3</span>
+                            <span class="code-pill">#JavaScript</span>
+                            <span class="code-pill">#RPL</span>
+                        </div>
+
+                        <!-- Floating Micro Pill -->
+                        <div class="identity-floating-pill">
+                            <span class="pill-icon">⚡</span>
+                            <span class="pill-text">Future Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TENTANG SAYA ================= -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <div class="section-tag-badge">
+                        <span class="badge-icon">👨‍💻</span>
+                        <span>BIODATA &amp; PROFIL</span>
+                    </div>
+                    <h2 class="section-title">Tentang <span class="text-neon-gradient">Saya</span></h2>
+                    <p class="section-subtitle">Mengenal lebih dekat latar belakang pendidikan dan minat di bidang teknologi.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Bio Narrative Card -->
+                    <div class="cyber-card about-intro-card scroll-reveal">
+                        <div class="card-header-bar">
+                            <div class="terminal-dots">
+                                <span class="tdot red"></span>
+                                <span class="tdot yellow"></span>
+                                <span class="tdot green"></span>
+                            </div>
+                            <span class="terminal-title">profile_bio.json</span>
+                        </div>
+                        
+                        <div class="card-content-wrap">
+                            <h3 class="about-intro-heading">
+                                Siswa Berdedikasi di Bidang <span class="highlight-cyan">Rekayasa Perangkat Lunak</span>
+                            </h3>
+                            <p class="about-paragraph">
+                                Halo! Saya <strong>Muhammad Fadli</strong>, siswa aktif kelas <strong>11 RPL B</strong> di <strong>SMK Negeri Tembarak</strong>, Temanggung. Saya memiliki ketertarikan mendalam dalam dunia teknologi informasi, khususnya pemrograman web dan rekayasa perangkat lunak.
+                            </p>
+                            <p class="about-paragraph">
+                                Melalui jurusan RPL, saya mempelajari bagaimana merancang logika program, menyusun antarmuka yang ramah pengguna, serta memahami arsitektur aplikasi dari tahap konsep hingga implementasi nyata. Saya terus belajar untuk meningkatkan keahlian teknis dan kesiapan menghadapi industri digital modern.
+                            </p>
+
+                            <div class="about-features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon-box cyan-glow">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4 class="feature-title">Fokus Coding</h4>
+                                        <p class="feature-desc">Mempelajari struktur kode bersih dan algoritma terarah.</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item">
+                                    <div class="feature-icon-box purple-glow">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="feature-text">
+                                        <h4 class="feature-title">Tampilan Interaktif</h4>
+                                        <p class="feature-desc">Mendesain UI/UX yang responsif dan memanjakan mata.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Diri Card -->
+                    <div class="cyber-card about-data-card scroll-reveal">
+                        <div class="card-header-bar">
+                            <div class="terminal-dots">
+                                <span class="tdot red"></span>
+                                <span class="tdot yellow"></span>
+                                <span class="tdot green"></span>
+                            </div>
+                            <span class="terminal-title">biodata_resmi.yml</span>
+                        </div>
+
+                        <div class="card-content-wrap">
+                            <h3 class="data-card-title">Data Diri Siswa</h3>
+                            <p class="data-card-desc">Informasi profil akademik dan kontak resmi:</p>
+
+                            <div class="info-items-stack">
+                                <!-- Nama -->
+                                <div class="info-item-row">
+                                    <div class="info-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Nama Lengkap</span>
+                                        <span class="info-value text-glow-subtle">Muhammad Fadli</span>
+                                    </div>
+                                </div>
+
+                                <!-- Kelas -->
+                                <div class="info-item-row">
+                                    <div class="info-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Tingkat / Kelas</span>
+                                        <span class="info-value badge-highlight">11 RPL B</span>
+                                    </div>
+                                </div>
+
+                                <!-- Sekolah -->
+                                <div class="info-item-row">
+                                    <div class="info-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Instansi Sekolah</span>
+                                        <span class="info-value">SMK N Tembarak</span>
+                                    </div>
+                                </div>
+
+                                <!-- Jurusan -->
+                                <div class="info-item-row">
+                                    <div class="info-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Kompetensi Keahlian</span>
+                                        <span class="info-value">Rekayasa Perangkat Lunak (RPL)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Alamat -->
+                                <div class="info-item-row">
+                                    <div class="info-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Domisili / Alamat</span>
+                                        <span class="info-value">Temanggung, Tembarak, Tembarak</span>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="info-item-row">
+                                    <div class="info-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="info-details">
+                                        <span class="info-label">Email Resmi</span>
+                                        <a href="mailto:muhammadfad6767@gmail.com" class="info-link">muhammadfad6767@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <!-- Sesuai permintaan: HTML, CSS, JavaScript, UI/UX, Web Development, Programming -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <div class="section-tag-badge">
+                        <span class="badge-icon">⚡</span>
+                        <span>KEAHLIAN TEKNIS</span>
+                    </div>
+                    <h2 class="section-title">My Technical <span class="text-neon-gradient">Skills</span></h2>
+                    <p class="section-subtitle">Fondasi kemampuan teknis dan alat pengembangan yang dipelajari di jurusan RPL.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill 1: HTML -->
+                    <div class="skill-card scroll-reveal" data-skill="html">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon-wrap icon-html">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 2l1.8 17.8L12 22l7.2-2.2L21 2H3zm14.6 6.2h-7.8l.2 2.3h7.4l-.6 6.1-4.8 1.4-4.8-1.4-.3-3.6h2.2l.1 1.9 2.8.8 2.8-.8.3-3h-8.2l-.6-6.1h12l-.4 2.4z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-title-row">
+                                <h3 class="skill-name">HTML</h3>
+                                <span class="skill-tag">Web Structure</span>
+                            </div>
+                            <p class="skill-description">
+                                Penguasaan struktur halaman web semantik (HTML5), hierarki konten SEO-friendly, formulir interaktif, dan standar aksesibilitas web modern.
+                            </p>
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="--level: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2: CSS -->
+                    <div class="skill-card scroll-reveal" data-skill="css">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon-wrap icon-css">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 2l1.8 17.8L12 22l7.2-2.2L21 2H3zm14.8 4.2l-.2 2.3h-9.9l.2 2.3h9.5l-.7 7-4.7 1.4-4.7-1.4-.3-3.8h2.3l.1 2 2.6.7 2.6-.7.3-3.3H6.7L6 4.2h11.8z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-title-row">
+                                <h3 class="skill-name">CSS</h3>
+                                <span class="skill-tag">Styling &amp; Design</span>
+                            </div>
+                            <p class="skill-description">
+                                Pembuatan layout responsif dengan Flexbox dan CSS Grid, efek visual dark mode, animasi transisi halus, glassmorphism, dan custom properties (CSS Variables).
+                            </p>
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="--level: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3: JavaScript -->
+                    <div class="skill-card scroll-reveal" data-skill="js">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon-wrap icon-js">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 3h18v18H3V3zm10.7 13.6c.5.8 1.2 1.3 2.3 1.3 1.2 0 1.9-.6 1.9-1.5 0-1.1-.9-1.5-2.4-2.1l-.8-.3c-2.3-1-3.8-2.2-3.8-4.8 0-2.4 1.8-4.2 4.6-4.2 2 0 3.4.7 4.4 2.4l-2 1.3c-.6-.9-1.3-1.3-2.4-1.3-1 0-1.7.6-1.7 1.4 0 .9.7 1.3 2.1 1.9l.8.3c2.7 1.1 4.2 2.4 4.2 5 0 2.9-2.2 4.5-5.2 4.5-2.9 0-4.7-1.4-5.6-3.1l2.2-1.4zM6.5 17.9l2.1-1.3c.4.7.8 1.2 1.6 1.2.9 0 1.5-.4 1.5-1.9V8.8h2.6v7.2c0 2.9-1.7 4.2-4.1 4.2-2.1 0-3.3-1.1-3.7-2.3z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-title-row">
+                                <h3 class="skill-name">JavaScript</h3>
+                                <span class="skill-tag">Logika &amp; DOM</span>
+                            </div>
+                            <p class="skill-description">
+                                Logika pemrograman sisi klien, manipulasi DOM dinamis, event listeners, localStorage persistensi data, interaktivitas antarmuka, dan dasar ES6+.
+                            </p>
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="--level: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4: UI/UX -->
+                    <div class="skill-card scroll-reveal" data-skill="uiux">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon-wrap icon-uiux">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-title-row">
+                                <h3 class="skill-name">UI/UX</h3>
+                                <span class="skill-tag">Interface Design</span>
+                            </div>
+                            <p class="skill-description">
+                                Perancangan konsep antarmuka berpusat pada kenyamanan pengguna, pemilihan palet warna kontras tinggi, hierarki tipografi modern, dan navigasi yang intuitif.
+                            </p>
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="--level: 78%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5: Web Development -->
+                    <div class="skill-card scroll-reveal" data-skill="webdev">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon-wrap icon-webdev">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-title-row">
+                                <h3 class="skill-name">Web Development</h3>
+                                <span class="skill-tag">Full Workflow</span>
+                            </div>
+                            <p class="skill-description">
+                                Pengembangan situs web menyeluruh, arsitektur tata letak responsif di semua resolusi gawai, integrasi komponen, performa loading cepat, dan best practice web.
+                            </p>
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="--level: 82%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6: Programming -->
+                    <div class="skill-card scroll-reveal" data-skill="programming">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon-wrap icon-programming">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                                <line x1="20" y1="9" x2="23" y2="9"></line>
+                                <line x1="20" y1="14" x2="23" y2="14"></line>
+                                <line x1="1" y1="9" x2="4" y2="9"></line>
+                                <line x1="1" y1="14" x2="4" y2="14"></line>
+                            </svg>
+                        </div>
+                        <div class="skill-content">
+                            <div class="skill-title-row">
+                                <h3 class="skill-name">Programming</h3>
+                                <span class="skill-tag">Logic &amp; Algoritma</span>
+                            </div>
+                            <p class="skill-description">
+                                Fondasi logika pemrograman yang kuat, pemecahan masalah algoritmik, dasar struktur data, alur kontrol kondisional &amp; perulangan, serta version control dengan Git.
+                            </p>
+                            <div class="skill-level-bar">
+                                <div class="skill-level-fill" style="--level: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PORTFOLIO SECTION ================= -->
+        <!-- Sesuai permintaan: Website Sekolah, Website Portfolio, Aplikasi Sederhana, Project RPL -->
+        <section class="section portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <div class="section-tag-badge">
+                        <span class="badge-icon">💼</span>
+                        <span>SHOWCASE KARYA</span>
+                    </div>
+                    <h2 class="section-title">My <span class="text-neon-gradient">Portfolio</span></h2>
+                    <p class="section-subtitle">Daftar proyek contoh yang mudah disesuaikan untuk mendokumentasikan karya coding saya.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Website Sekolah -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-visual-banner banner-school">
+                            <div class="banner-overlay"></div>
+                            <div class="project-category-tag">SMK Project</div>
+                            <div class="project-mockup-code">
+                                <span class="code-comment">&lt;!-- Web Sekolah SMK N Tembarak --&gt;</span>
+                                <span class="code-line">&lt;<span class="c-tag">header</span> class="<span class="c-val">school-nav</span>"&gt;</span>
+                                <span class="code-line indent">&lt;<span class="c-tag">h1</span>&gt;Profil Jurusan RPL&lt;/<span class="c-tag">h1</span>&gt;</span>
+                            </div>
+                            <div class="project-icon-float">🏫</div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-tech-badges">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Website Sekolah</h3>
+                            <p class="project-excerpt">
+                                Website interaktif profil sekolah yang menyajikan informasi akademik, pengumuman kegiatan, dan profil kompetensi keahlian Rekayasa Perangkat Lunak.
+                            </p>
+                            <button class="btn btn-view-project"
+                                data-title="Website Sekolah"
+                                data-category="School Portal &bull; Web Development"
+                                data-desc="Proyek website profil sekolah modern yang dirancang untuk menyampaikan informasi profil sekolah, berita agenda, galeri kegiatan ekstrakurikuler, dan detail jurusan RPL secara transparan, informatif, dan responsif di smartphone."
+                                data-tech="HTML5, CSS3, JavaScript"
+                                data-features="Navigasi Informasi Cepat, Desain Responsif Ramah Ponsel, Galeri Foto &amp; Kegiatan, Section Pengumuman Terkini"
+                                data-status="Proyek Pembelajaran Siswa RPL">
+                                <span>Lihat Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Website Portfolio -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-visual-banner banner-portfolio">
+                            <div class="banner-overlay"></div>
+                            <div class="project-category-tag">Personal Brand</div>
+                            <div class="project-mockup-code">
+                                <span class="code-comment">// Portfolio Muhammad Fadli</span>
+                                <span class="code-line"><span class="c-key">const</span> developer = {</span>
+                                <span class="code-line indent">name: <span class="c-val">'Fadli'</span>, theme: <span class="c-val">'dark'</span></span>
+                                <span class="code-line">};</span>
+                            </div>
+                            <div class="project-icon-float">💻</div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-tech-badges">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Website Portfolio</h3>
+                            <p class="project-excerpt">
+                                Website portfolio pribadi bergaya futuristik pengembang perangkat lunak, dilengkapi dukungan Dark/Light Mode, identitas visual neon, dan tata letak responsif.
+                            </p>
+                            <button class="btn btn-view-project"
+                                data-title="Website Portfolio Pribadi"
+                                data-category="Personal Website &bull; Cyber Dark Aesthetics"
+                                data-desc="Platform portfolio pribadi lengkap dengan konsep visual developer dark futuristic. Dilengkapi penyimpanan tema otomatis di LocalStorage, tipografi identitas tanpa foto manusia, dan formulir kontak terintegrasi mailto."
+                                data-tech="HTML5, CSS3 Variables, Vanilla JavaScript, LocalStorage"
+                                data-features="Sistem Tema Dual (Dark/Light), Tipografi Glow Neon, Scrollspy Navigation, Formulir Kontak Mailto Terstruktur"
+                                data-status="Live &bull; Aktif Digunakan">
+                                <span>Lihat Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Aplikasi Sederhana -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-visual-banner banner-app">
+                            <div class="banner-overlay"></div>
+                            <div class="project-category-tag">Web Application</div>
+                            <div class="project-mockup-code">
+                                <span class="code-comment">/* Interactive Utility App */</span>
+                                <span class="code-line"><span class="c-key">function</span> <span class="c-func">calculateGrade</span>(score) {</span>
+                                <span class="code-line indent"><span class="c-key">return</span> score >= 75 ? <span class="c-val">'Kompeten'</span> : <span class="c-val">'Remidi'</span>;</span>
+                                <span class="code-line">}</span>
+                            </div>
+                            <div class="project-icon-float">📱</div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-tech-badges">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Aplikasi Sederhana</h3>
+                            <p class="project-excerpt">
+                                Aplikasi web utilitas ringan untuk mempermudah perhitungan nilai siswa, manajemen catatan tugas harian, dan kalkulator interaktif berbasis JavaScript.
+                            </p>
+                            <button class="btn btn-view-project"
+                                data-title="Aplikasi Sederhana"
+                                data-category="Utility App &bull; DOM Manipulation"
+                                data-desc="Aplikasi utilitas mini yang dibangun untuk melatih logika pemrograman JavaScript murni. Memiliki fitur manajemen to-do list harian tugas sekolah, kalkulator nilai rata-rata, dan validasi input secara langsung."
+                                data-tech="HTML5, CSS3, Vanilla JavaScript"
+                                data-features="Kalkulasi Real-time, Validasi Form Interaktif, Penyimpanan State Lokal, Desain User-Friendly"
+                                data-status="Proyek Latihan Mandiri">
+                                <span>Lihat Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Project RPL -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-visual-banner banner-rpl">
+                            <div class="banner-overlay"></div>
+                            <div class="project-category-tag">Vocational Task</div>
+                            <div class="project-mockup-code">
+                                <span class="code-comment">// Sistem Manajemen Data RPL</span>
+                                <span class="code-line"><span class="c-key">SELECT</span> * <span class="c-key">FROM</span> tbl_siswa</span>
+                                <span class="code-line indent"><span class="c-key">WHERE</span> kelas = <span class="c-val">'11 RPL B'</span>;</span>
+                            </div>
+                            <div class="project-icon-float">⚙️</div>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-tech-badges">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Project RPL</h3>
+                            <p class="project-excerpt">
+                                Sistem pencatatan dan pengelolaan data inventaris lab komputer RPL serta absensi digital siswa, dirancang terstruktur sebagai tugas kejuruan di SMK.
+                            </p>
+                            <button class="btn btn-view-project"
+                                data-title="Project RPL (Sistem Data Siswa &amp; Inventaris)"
+                                data-category="Academic Project &bull; Database &amp; Logic"
+                                data-desc="Proyek kejuruan Rekayasa Perangkat Lunak untuk mengorganisasi data praktikum lab, inventaris hardware, dan daftar absensi kelompok siswa. Dibuat dengan antarmuka yang bersih dan alur kerja yang mudah dipahami."
+                                data-tech="HTML5, CSS3, JavaScript, LocalStorage / Mock API"
+                                data-features="Pencatatan Data Dinamis, Filter &amp; Pencarian Cepat, Tampilan Tabel Rapi, Desain Dashboard Modern"
+                                data-status="Tugas Kejuruan Praktik RPL">
+                                <span>Lihat Project</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= KONTAK SECTION ================= -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <div class="section-tag-badge">
+                        <span class="badge-icon">📬</span>
+                        <span>TERHUBUNG DENGAN SAYA</span>
+                    </div>
+                    <h2 class="section-title">Hubungi <span class="text-neon-gradient">Saya</span></h2>
+                    <p class="section-subtitle">Kirimkan pesan atau pertanyaan. Formulir ini otomatis menyiapkan draf email resmi ke alamat saya.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Kontak Panel -->
+                    <div class="cyber-card contact-info-card scroll-reveal">
+                        <div class="card-header-bar">
+                            <div class="terminal-dots">
+                                <span class="tdot red"></span>
+                                <span class="tdot yellow"></span>
+                                <span class="tdot green"></span>
+                            </div>
+                            <span class="terminal-title">contact_channel.sh</span>
+                        </div>
+
+                        <div class="card-content-wrap">
+                            <h3 class="contact-panel-heading">Mari Berdiskusi &amp; Kolaborasi</h3>
+                            <p class="contact-panel-sub">
+                                Jangan ragu untuk menghubungi saya untuk berdiskusi mengenai proyek coding, berbagi ilmu seputar pemrograman, atau bertukar informasi seputar SMK RPL.
+                            </p>
+
+                            <div class="direct-contact-stack">
+                                <!-- Email Box -->
+                                <a href="mailto:muhammadfad6767@gmail.com" class="direct-contact-tile" title="Kirim email langsung">
+                                    <div class="tile-icon cyan">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="tile-text">
+                                        <span class="tile-label">Alamat Email Resmi</span>
+                                        <strong class="tile-val">muhammadfad6767@gmail.com</strong>
+                                    </div>
+                                </a>
+
+                                <!-- Sekolah Box -->
+                                <div class="direct-contact-tile">
+                                    <div class="tile-icon purple">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="tile-text">
+                                        <span class="tile-label">Sekolah &amp; Kelas</span>
+                                        <strong class="tile-val">11 RPL B &bull; SMK N Tembarak</strong>
+                                    </div>
+                                </div>
+
+                                <!-- Alamat Box -->
+                                <div class="direct-contact-tile">
+                                    <div class="tile-icon blue">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="tile-text">
+                                        <span class="tile-label">Lokasi</span>
+                                        <strong class="tile-val">Temanggung, Tembarak, Tembarak</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tombol Cepat Email -->
+                            <div class="quick-mailto-banner">
+                                <span class="quick-mailto-text">Ingin mengirim email tanpa mengisi form?</span>
+                                <a href="mailto:muhammadfad6767@gmail.com" class="btn btn-secondary btn-block">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                    <span>Buka Aplikasi Email Langsung</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Kontak -->
+                    <div class="cyber-card contact-form-card scroll-reveal">
+                        <div class="card-header-bar">
+                            <div class="terminal-dots">
+                                <span class="tdot red"></span>
+                                <span class="tdot yellow"></span>
+                                <span class="tdot green"></span>
+                            </div>
+                            <span class="terminal-title">send_message.js</span>
+                        </div>
+
+                        <div class="card-content-wrap">
+                            <h3 class="form-title">Formulir Pesan</h3>
+                            <p class="form-description">
+                                Isi pesan di bawah ini. Tombol <strong>"Kirim Pesan"</strong> akan membuka email Anda secara otomatis dengan tujuan ke <strong>muhammadfad6767@gmail.com</strong>.
+                            </p>
+
+                            <form id="contactForm" class="cyber-form">
+                                <!-- Nama -->
+                                <div class="form-group">
+                                    <label for="formName" class="form-label">
+                                        <span>Nama</span>
+                                        <span class="required-star">*</span>
+                                    </label>
+                                    <div class="input-container">
+                                        <input type="text" id="formName" name="name" class="form-input" placeholder="Masukkan nama Anda..." required autocomplete="name">
+                                        <span class="input-focus-border"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="formEmail" class="form-label">
+                                        <span>Email</span>
+                                        <span class="required-star">*</span>
+                                    </label>
+                                    <div class="input-container">
+                                        <input type="email" id="formEmail" name="email" class="form-input" placeholder="contoh: nama@domain.com" required autocomplete="email">
+                                        <span class="input-focus-border"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Pesan -->
+                                <div class="form-group">
+                                    <label for="formMessage" class="form-label">
+                                        <span>Pesan</span>
+                                        <span class="required-star">*</span>
+                                    </label>
+                                    <div class="input-container">
+                                        <textarea id="formMessage" name="message" class="form-textarea" rows="5" placeholder="Tuliskan pesan, pertanyaan, atau tanggapan Anda..." required></textarea>
+                                        <span class="input-focus-border"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Tombol Kirim Pesan -->
+                                <button type="submit" class="btn btn-primary btn-submit-form" id="btnSubmitForm">
+                                    <span>Kirim Pesan</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top-row">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-terminal-symbol">&lt;</span>
+                        <span class="logo-letters">MF<span class="logo-dot">.</span></span>
+                        <span class="logo-terminal-symbol">/&gt;</span>
+                    </a>
+                    <p class="footer-brand-sub">Siswa Rekayasa Perangkat Lunak &bull; Calon Web Developer</p>
+                </div>
+
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-divider-line"></div>
+
+            <div class="footer-bottom-row">
+                <div class="footer-credits">
+                    <p class="copyright-main">&copy; 2026 Muhammad Fadli</p>
+                    <span class="footer-dot-divider">&bull;</span>
+                    <p class="copyright-school">11 RPL B - SMK N Tembarak</p>
+                </div>
+
+                <!-- Tombol Back to Top -->
+                <a href="#home" class="back-to-top" id="backToTop" aria-label="Kembali ke atas" title="Kembali ke Bagian Atas">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL DETAIL PROYEK ================= -->
+    <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-badge-category" id="modalCategory">Kategori Proyek</span>
+                    <h3 class="modal-title" id="modalTitle">Detail Proyek</h3>
+                </div>
+                <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup Dialog Detail">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-tech-stack" id="modalTechStack"></div>
+                
+                <div class="modal-block">
+                    <h4 class="modal-block-heading">Ringkasan Proyek</h4>
+                    <p class="modal-desc-text" id="modalDesc"></p>
+                </div>
+
+                <div class="modal-block">
+                    <h4 class="modal-block-heading">Fitur &amp; Kemampuan</h4>
+                    <ul class="modal-features-list" id="modalFeaturesList"></ul>
+                </div>
+
+                <div class="modal-block modal-status-block">
+                    <span class="status-label">Status Proyek:</span>
+                    <span class="status-value" id="modalStatus">Aktif</span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modalCloseFooter">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= NOTIFIKASI TOAST FEEDBACK ================= -->
+    <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+        <div class="toast-icon-box" id="toastIcon">🚀</div>
+        <div class="toast-content">
+            <strong class="toast-title" id="toastTitle">Membuka Email...</strong>
+            <p class="toast-message" id="toastMessage">Aplikasi email Anda sedang dibuka dengan draf pesan yang sudah terisi.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Logika Interaktif -->
+    <script src="script.js"></script>
+</body>
+</html>
